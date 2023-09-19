@@ -26,32 +26,14 @@ Upon return of json from your POST request, a state update by a setState functio
 **Backend Setup**
 - You can use this json-server templateLinks to an external site. to generate your backend code. Using this template will make it easier to deploy your backend later on.
 
-- sIf you prefer, instead of using the template, you can create a db.json file in the root of your project with a structure that looks like this:
+/* Apply to all four sides */
+padding: 1em;
 
-{
-  "toys": [
-    {
-      "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
-    },
-    {
-      "id": 2,
-      "name": "Buzz Lightyear",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
-    }
-  ]
-}
-Then, assuming you have json-server installed globally, you can run this command to run the server:
+/* top and bottom | left and right */
+padding: 5% 10%;
 
- json-server --watch db.json
-Whatever top-level keys exist in your db.json file will determine the routes available. In the example above, since we have a key of toys pointing to an array of toy objects, json-server will generate the following routes:
+/* top | left and right | bottom */
+padding: 1em 2em 2em;
 
-GET /toys
-POST /toys
-GET /toys/:id
-PATCH /toys/:id
-DELETE /toys/:id
-You can consult the json-server docsLinks to an external site. for more information.
+/* top | right | bottom | left */
+padding: 5px 1em 0 2em;
